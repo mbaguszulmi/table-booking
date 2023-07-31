@@ -1,0 +1,45 @@
+name: flutter_base
+description: A new Flutter plugin project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+  flutter: ">=3.3.0"
+
+dependencies:
+  bloc: ^8.0.3
+  equatable: ^2.0.3
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  flutter_bloc: ^8.0.1
+  get_it: ^7.2.0
+  package_info_plus: ^4.0.2
+  shared_preferences: ^2.0.13
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: co.mbznetwork.flutter.flutter_base
+        pluginClass: FlutterBasePlugin
+      ios:
+        pluginClass: FlutterBasePlugin
+      linux:
+        pluginClass: FlutterBasePlugin
+      macos:
+        pluginClass: FlutterBasePlugin
+      windows:
+        pluginClass: FlutterBasePluginCApi
+      web:
+        pluginClass: FlutterBaseWeb
+        fileName: flutter_base_web.dart
